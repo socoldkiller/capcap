@@ -1,0 +1,14 @@
+name: Verify SwiftPM libraries
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  libraries:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift --version
+      - run: python3 scripts/check-library-targets.py
+      - run: swift build -c release
+      - run: swift test -c release
