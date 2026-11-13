@@ -899,4 +899,3 @@ package enum L10n {
     package static var imageMergeEmptyBody: String { s("imageMergeEmptyBody") }
     package static var imageMergeClipboardSourceName: String { s("imageMergeClipboardSourceName") }
 }
-

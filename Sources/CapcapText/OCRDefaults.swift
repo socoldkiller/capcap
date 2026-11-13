@@ -9,4 +9,3 @@ extension Defaults {
         set { CapcapPreferences.defaults.set(newValue.rawValue, forKey: "ocr.provider") }
     }
 }
-

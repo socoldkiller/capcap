@@ -14,4 +14,3 @@ package enum ImageMergeTemplate: Int, CaseIterable {
         }
     }
 }
-
